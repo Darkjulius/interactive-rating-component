@@ -1,5 +1,90 @@
-input {
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --primary-orange: hsl(25, 97%, 53%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-lightGrey: hsl(217, 12%, 63%);
+  --neutral-mediumGrey: hsl(216, 12%, 54%);
+  --neutral-darkBlue: hsl(213, 19%, 18%);
+  --neutral-veryDarkBlue: hsl(216, 12%, 8%);
+  --font-size: 0.9375rem;
+  --font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: var(--neutral-veryDarkBlue);
+  font-family: var(--font-family);
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.rating-start {
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 15px;
+  margin: 154px 24px;
+  padding: 24px 24px 32px 24px;
+}
+
+.rating-start .rond {
+  align-items: center;
+  background-color: var(--neutral-darkBlue);
+  border-radius: 100%;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin-bottom: 16px;
+  width: 40px;
+}
+
+.rating-start h1 {
+  color: var(--neutral-white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.rating-start p {
+  color: var(--neutral-lightGrey);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 24px;
+  width: 90%;
+}
+
+.form div {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="button"] {
+  background-color: var(--neutral-darkBlue);
+  border: none;
+  border-radius: 50%;
+  color: var(--neutral-mediumGrey);
   cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.175px;
+  line-height: 24px;
+  height: 42px;
+  width: 42px;
+}
+
+button {
+  display: block;
 }
 
 .hidden {
