@@ -1,7 +1,8 @@
-const form = document.querySelector("#form");
-const ratingStart = document.querySelector("#rating-start");
-const ratingEnd = document.querySelector("#rating-end");
-const rates = document.querySelectorAll(".button");
+const form = document.getElementById("form");
+const ratingStart = document.getElementById("rating-start");
+const ratingEnd = document.getElementById("rating-end");
+const buttonsValue = document.querySelectorAll(".buttons");
+const rating = document.getElementById("rating");
 
 /**
  * When I click on the submit button of the form, I delete the hidden class from the rating-end section and
@@ -12,4 +13,15 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
   ratingEnd.classList.remove("hidden");
   ratingStart.style.display = "none";
+});
+
+/**
+ * I use the forEach() method so I can retrieve the information. I process this information on click and I display
+ * it in the span element which has the id rating.
+ */
+
+buttonsValue.forEach((index) => {
+  index.addEventListener("click", function () {
+    rating.innerHTML = index.value;
+  });
 });
