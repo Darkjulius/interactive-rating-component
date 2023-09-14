@@ -67,7 +67,7 @@ body {
 
 /* I select the first four elements which have the class buttons */
 .form :nth-child(-n + 4 of .buttons) {
-  margin-right: 18px;
+  margin-right: 13px;
 }
 
 input[type="button"] {
