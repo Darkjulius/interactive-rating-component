@@ -64,11 +64,6 @@ body {
   width: 90%;
 }
 
-.form div {
-  display: flex;
-  justify-content: space-between;
-}
-
 input[type="button"] {
   background-color: var(--neutral-darkBlue);
   border: none;
@@ -83,10 +78,11 @@ input[type="button"] {
   width: 42px;
 }
 
-button {
+button[type="submit"] {
   display: block;
 }
 
+/* I immediately hide the rating-end section. */
 .hidden {
   display: none;
 }
