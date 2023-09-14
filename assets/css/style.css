@@ -24,6 +24,7 @@ body {
   width: 100vw;
 }
 
+/* SECTION RATING-START */
 .rating-start {
   background: radial-gradient(
     98.96% 98.96% at 50% 0%,
@@ -35,7 +36,7 @@ body {
   padding: 24px 24px 32px 24px;
 }
 
-.rating-start .rond {
+.rating-start .img-rond {
   align-items: center;
   background-color: var(--neutral-darkBlue);
   border-radius: 100%;
@@ -61,7 +62,12 @@ body {
   font-weight: 400;
   line-height: 22px;
   margin-bottom: 24px;
-  width: 90%;
+  width: 100%;
+}
+
+/* I select the first four elements which have the class buttons */
+.form :nth-child(-n + 4 of .buttons) {
+  margin-right: 18px;
 }
 
 input[type="button"] {
@@ -70,6 +76,7 @@ input[type="button"] {
   border-radius: 50%;
   color: var(--neutral-mediumGrey);
   cursor: pointer;
+  display: inline;
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.175px;
@@ -79,10 +86,82 @@ input[type="button"] {
 }
 
 button[type="submit"] {
-  display: block;
+  background-color: var(--primary-orange);
+  border: none;
+  border-radius: 22.5px;
+  color: var(--neutral-white);
+  cursor: pointer;
+  display: block !important;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: normal;
+  margin-top: 24px;
+  padding: 12px 108px;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 /* I immediately hide the rating-end section. */
 .hidden {
   display: none;
+}
+
+/* SECTION RATING-END */
+.rating-end {
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 15px;
+  margin: 154px 24px;
+  padding: 24px 24px 32px 24px;
+}
+
+.img-response {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 29px;
+}
+
+.img-response img {
+  height: 96px;
+  width: 144px;
+}
+
+.rating-end p:nth-child(2) {
+  background-color: var(--neutral-darkBlue);
+  border-radius: 22.5px;
+  color: var(--primary-orange);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0 auto;
+  padding: 5px 12px;
+  text-align: center;
+  width: fit-content;
+}
+
+.rating-end p:nth-child(3) {
+  color: var(--neutral-white);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 29px;
+  text-align: center;
+}
+
+.rating-end p:nth-child(4) {
+  color: var(--neutral-lightGrey);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 10px;
+  text-align: center;
 }
