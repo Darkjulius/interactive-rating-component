@@ -21,46 +21,53 @@
     <script src="./assets/javascript/script.js" defer></script>
   </head>
   <body>
-    <section id="rating-start" class="rating-start">
-      <div class="img-rond">
-        <img src="./assets/images/icon-star.svg" alt="icon start" />
+
+      <section id="rating-start" class="rating-start">
+        <div class="img-rond">
+          <img src="./assets/images/icon-star.svg" alt="icon start" />
+        </div>
+  
+        <h1>How did we do?</h1>
+  
+        <p>
+          Please let us know how we did with your support request. All feedback is
+          appreciated to help us improve our offering!
+        </p>
+  
+        <form id="form" class="form">
+          <div class="form-button">
+            <input type="button" name="note" class="buttons" value="1" />
+            <input type="button" name="note" class="buttons" value="2" />
+            <input type="button" name="note" class="buttons" value="3" />
+            <input type="button" name="note" class="buttons" value="4" />
+            <input type="button" name="note" class="buttons" value="5" />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <section id="rating-end" class="rating-end hidden">
+        <div class="img-response">
+          <img
+            src="./assets/images/illustration-thank-you.svg"
+            alt="illustration thank you"
+          />
+        </div>
+        <p>
+          You selected
+          <span id="rating"></span>
+          out of 5
+        </p>
+  
+        <p>Thank you!</p>
+  
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
       </div>
-
-      <h1>How did we do?</h1>
-
-      <p>
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
-
-      <form id="form" class="form">
-        <input type="button" name="note" class="buttons" value="1" />
-        <input type="button" name="note" class="buttons" value="2" />
-        <input type="button" name="note" class="buttons" value="3" />
-        <input type="button" name="note" class="buttons" value="4" />
-        <input type="button" name="note" class="buttons" value="5" />
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-    <section id="rating-end" class="rating-end hidden">
-      <div class="img-response">
-        <img
-          src="./assets/images/illustration-thank-you.svg"
-          alt="illustration thank you"
-        />
-      </div>
-      <p>
-        You selected
-        <span id="rating"></span>
-        out of 5
-      </p>
-
-      <p>Thank you!</p>
-
-      <p>
-        We appreciate you taking the time to give a rating. If you ever need
-        more support, don’t hesitate to get in touch!
-      </p>
-    </section>
   </body>
 </html>

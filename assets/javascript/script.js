@@ -25,3 +25,14 @@ buttonsValue.forEach((index) => {
     rating.innerHTML = index.value;
   });
 });
+
+/**
+ * This function is used when the user clicks on a note. The background color and font color changes.
+ */
+buttonsValue.forEach((index) => {
+  index.addEventListener("click", () => {
+    let button = index;
+    button.style.backgroundColor = "Silver";
+    button.style.color = "White";
+  });
+});
